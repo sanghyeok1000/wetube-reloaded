@@ -9,5 +9,6 @@ const handleHome = (req, res) => res.send("Home");
 globalRouter.get("/", home);
 globalRouter.get("/join", join);
 globalRouter.get("/login", login);
+globalRouter.get("/search", search);
 
 export default globalRouter;
