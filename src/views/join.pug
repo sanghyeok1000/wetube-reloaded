@@ -1,4 +1,4 @@
-extends base
+extends base.pug
 
 
 block content
@@ -12,3 +12,6 @@ block content
         input(placeholder="Confirm Password", name="password2", type="password", required) 
         input(placeholder="Location", name="location", type="text", required)
         input(type="submit", value="Join")
+    div 
+        span Already have an account?
+        a(hraf="/login")  Log in now &rarr;
