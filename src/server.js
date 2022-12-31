@@ -4,6 +4,7 @@ import session from "express-session";
 import rootRouter from "./routers/rootRouter";
 import userRouter from "./routers/userRouter";
 import videoRouter from "./routers/videoRouter";
+import { localMiddleware } from "./middleware";
 
 const app = express();
 
@@ -26,6 +27,7 @@ app.use((req, res, next) => {
     next();
   });
 });
+app.use(localMiddleware);
 app.use("/", rootRouter);
 app.use("/users", userRouter);
 app.use("/videos", videoRouter);
