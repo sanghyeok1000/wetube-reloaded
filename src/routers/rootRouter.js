@@ -13,7 +13,7 @@ const handleHome = (req, res) => res.send("Home");
 
 rootRouter.get("/", home);
 rootRouter.route("/join").get(getJoin).post(postJoin);
-rootRouter.get("/login").get(getLogin).post(postLogin);
+rootRouter.route("/login").get(getLogin).post(postLogin);
 rootRouter.get("/search", search);
 
 export default rootRouter;

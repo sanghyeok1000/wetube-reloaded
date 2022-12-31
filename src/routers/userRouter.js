@@ -1,5 +1,11 @@
 import express from "express";
-import { edit, remove, logout, see } from "../controllers/userController";
+import {
+  edit,
+  remove,
+  logout,
+  see,
+  getLogin,
+} from "../controllers/userController";
 
 const userRouter = express.Router();
 
