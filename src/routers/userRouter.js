@@ -10,7 +10,7 @@ import {
 
 const userRouter = express.Router();
 
-const handleEdit = (req, res) => res.send(" Edit user");
+const handleEdit = (req, res) => res.send("Edit user");
 
 userRouter.get("/logout", logout);
 userRouter.get("/edit", edit);
